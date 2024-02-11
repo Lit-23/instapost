@@ -12,7 +12,14 @@ class PostController extends Controller
         $post = new Post();
         $post->content = $request->content;
         $post->user_id = Auth::user()->id;
-
         $post->save();
+
+        return redirect()->route('home');
+    }
+
+    public function delete($id){
+        $post = Post::find($id);
+        $post->delete();
+        return redirect()->route('home');
     }
 }
