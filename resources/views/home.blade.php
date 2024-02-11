@@ -20,7 +20,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body p-4">
-                    <span class="fw-bold">John Doe</span>
+                    <span class="fw-bold">John Doe <button class="float-end btn btn-secondary btn-sm" href="#">Delete</button></span>
                     <br>
                     <small>a few minutes ago</small>
                     <br>
